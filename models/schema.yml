@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: conversion_cost_by_channel
+    description: "A view combining conversion cost from multiple sources"
+    columns:
+      - name: source
+        description: "Type of source"
+      - name: conv_cost
+        description: "Conversion cost for the source"
+  - name: cost_per_enage
+    description: "Cost per engage from multiple sources"
+    columns:
+      - name: source
+        description: "Type of source"
+      - name: cost_per_engage
+        description: "Cost per engage for the source"
+  - name: imp_by_channel
+    description: "impressions per channel"
+    columns:
+      - name: source
+        description: "Type of source"
+      - name: conv_cost
+        description: "Impressions for the source"
+  - name: cpc
+    description: "cpc per channel"
+    columns:
+      - name: source
+        description: "Type of source"
+      - name: conv_cost
+        description: "Cpc for the source"
